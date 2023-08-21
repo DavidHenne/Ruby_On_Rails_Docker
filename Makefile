@@ -4,6 +4,9 @@ build:
 start-services:
 	docker-compose up -d db
 
+create-db:
+	docker-compose run web rake db:create
+
 run:
 	docker-compose up web
 
